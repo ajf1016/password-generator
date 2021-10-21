@@ -1,0 +1,105 @@
+body {
+	background: rgb(117, 114, 114);
+	margin: 0;
+	color: #fff;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.container {
+	background: #861834;
+	padding: 3rem;
+	border-radius: 1rem;
+	border: 2px solid rgb(230, 131, 180);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.form {
+	display: grid;
+	grid-template-columns: auto auto;
+	row-gap: 1rem;
+	column-gap: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+.title{
+    margin: 0;
+    text-align: center;
+}
+label{
+    font-weight: bold;
+}
+.character-amount-container{
+    display: flex;
+    align-items: center;
+}
+.number-input{
+    width: 35px;
+}
+.password-display{
+    background: #fff;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #333;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: .5rem;
+}
+.btn{
+    grid-column: span 2;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all .2s ease-in;
+}
+.btn:hover{
+    background-color: #FFFFFF33;
+}
+#quality{
+    font-size: 30px;
+    font-family: sans-serif;
+    background:#fff;
+    color: black;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+@media all and (max-width: 1280px){}
+@media all and (max-width: 1280px){}
+@media all and (max-width: 768px){}
+@media all and (max-width: 640px){}
+@media all and (max-width: 480px){
+    .password-display{
+        width: 250px;
+    }
+    .container{
+        width: 300px;
+    }
+    label{
+        font-size: 10px;
+        width: 100px;
+    }
+    #quality{
+        font-size: 21px;
+    }
+}
+@media all and (max-width: 360px){
+    .password-display{
+        width: 270px;
+    }
+    .container{
+        width: 245px;
+    }
+}
